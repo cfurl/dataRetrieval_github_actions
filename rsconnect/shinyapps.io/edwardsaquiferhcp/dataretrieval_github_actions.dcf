@@ -1,0 +1,10 @@
+name: dataretrieval_github_actions
+title:
+username: edwardsaquiferhcp
+account: edwardsaquiferhcp
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10220541
+bundleId:
+url: https://edwardsaquiferhcp.shinyapps.io/dataretrieval_github_actions/
+version: 1
