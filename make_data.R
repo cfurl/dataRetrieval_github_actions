@@ -7,7 +7,7 @@ library(reactable)
 
 siteNo <- "08170000"
 pCode <- "00060"
-start.date <- Sys.Date()-6
+start.date <- Sys.Date()-10
 end.date <- Sys.Date()-1
 
 sm <- readNWISdv(siteNumbers = siteNo,
