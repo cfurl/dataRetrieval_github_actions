@@ -15,7 +15,7 @@ sm <- readNWISdv(siteNumbers = siteNo,
                  startDate = start.date,
                  endDate = end.date)
 
-date_seq<-as_tibble(seq(as.Date(start.date),by="day",length.out=6)) %>%
+date_seq<-as_tibble(seq(as.Date(start.date),by="day",length.out=11)) %>%
   set_names("Date") %>%
   left_join(sm) %>%
   set_names(c("Date", "agency", "site_no","discharge","qualifier"))
