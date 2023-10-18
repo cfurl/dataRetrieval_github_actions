@@ -1,5 +1,5 @@
 #library(tidyverse)
-library(dplyr)
+library(tidyverse)
 library(dataRetrieval)
 library(shiny)
 library(bslib)
