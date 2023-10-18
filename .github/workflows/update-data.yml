@@ -5,7 +5,8 @@ on:
   #  - cron: "0 7 * * *"
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+  #https://stackoverflow.com/questions/72851548/permission-denied-to-github-actionsbot
+  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -20,7 +21,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          install.packages(c("dataRetrieval", "tidyverse", "shiny", "bslib", "reactable", "readr"))
+          install.packages(c("dataRetrieval", "dplyr", "shiny", "bslib", "reactable", "readr"))
         shell: Rscript {0}
         
       - name: Update data
