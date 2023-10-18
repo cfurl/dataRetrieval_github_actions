@@ -1,10 +1,10 @@
 name: Update data
 
 on:
-  # schedule:
-  #  - cron: "0 7 * * *"
-  push:
-    branches: [ docker ]
+   schedule:
+    - cron: "0 7 * * *"
+  #push:
+  #  branches: [ docker ]
   workflow_dispatch:
 
   
