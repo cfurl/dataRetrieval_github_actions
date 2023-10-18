@@ -21,15 +21,23 @@ jobs:
           
       - name: Install dependencies
         run: |
-          install.packages(c("dataRetrieval", "tidyverse", "shiny", "bslib", "reactable", "readr"))
+          install.packages(c("dataRetrieval", "tidyverse", "shiny", "bslib", "reactable", "readr", "rsconnect"))
         shell: Rscript {0}
         
       - name: Update data
         run: |
           source("make_data.R")
         shell: Rscript {0}
-        #env:
-         # BEARER: ${{ secrets.TWITTER_BEARER }}
+        
+      - name: deploy
+        env:
+          # set the shinyapps keys as environment variables
+          SHINY_ACC_NAME: ${{ secrets.SHINY_ACC_NAME }}
+          TOKEN: ${{ secrets.TOKEN }}
+          SECRET: ${{ secrets.SECRET }}
+        run: |
+          source("deploy.R")
+        shell: Rscript {0}  
         
       - name: Commit files
         run: |
