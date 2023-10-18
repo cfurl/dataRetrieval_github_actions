@@ -21,7 +21,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          install.packages(c("dataRetrieval", "dplyr", "shiny", "bslib", "reactable", "readr"))
+          install.packages(c("dataRetrieval", "dplyr", "shiny", "bslib", "reactable"))
         shell: Rscript {0}
         
       - name: Update data
