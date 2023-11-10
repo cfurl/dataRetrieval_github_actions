@@ -1,4 +1,4 @@
-FROM rocker/shiny:4.2.1
+FROM rocker/shiny:4.3.2
 RUN install2.r rsconnect tibble dplyr stringr rtweet htmltools lubridate bslib reactable
 WORKDIR /home/dataRetrieval_github_actions
 COPY ui.R ui.R 
