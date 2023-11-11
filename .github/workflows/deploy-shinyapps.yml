@@ -9,10 +9,10 @@ on:
   push:
     branches: [ docker ]
     
-  # workflow_run:
-  #   workflows: ["Update data"]
-  #   types:
-    #  - completed
+   workflow_run:
+     workflows: ["Update data"]
+     types:
+      - completed
 
   
 
