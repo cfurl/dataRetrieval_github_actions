@@ -3,8 +3,8 @@ name: Update data
 on:
    schedule:
     - cron: "9 4 * * *"
-  # push:
-  #  branches: [ docker ]
+   push:
+    branches: [ docker ]
   workflow_dispatch:
 
   
