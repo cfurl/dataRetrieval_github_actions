@@ -2,15 +2,14 @@ name: Update data
 
 on:
   # schedule:
-<<<<<<< HEAD
+
   #  - cron: "38 11 * * *"
    workflow_dispatch:
-=======
+
   #  - cron: "9 4 * * *"
   # push:
   #  branches: [ docker ]
-  workflow_dispatch:
->>>>>>> docker
+ 
 
   
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
