@@ -5,6 +5,10 @@ account: edwardsaquiferhcp
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10220541
+<<<<<<< HEAD
 bundleId: 7906891
+=======
+bundleId: 7820221
+>>>>>>> docker
 url: https://edwardsaquiferhcp.shinyapps.io/dataretrieval_github_actions/
 version: 1

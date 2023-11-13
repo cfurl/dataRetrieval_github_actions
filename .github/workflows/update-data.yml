@@ -2,8 +2,15 @@ name: Update data
 
 on:
   # schedule:
+<<<<<<< HEAD
   #  - cron: "38 11 * * *"
    workflow_dispatch:
+=======
+  #  - cron: "9 4 * * *"
+  # push:
+  #  branches: [ docker ]
+  workflow_dispatch:
+>>>>>>> docker
 
   
   # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -28,16 +35,6 @@ jobs:
         run: |
           source("make_data.R")
         shell: Rscript {0}
-        
-      - name: deploy
-        env:
-          # set the shinyapps keys as environment variables
-          SHINY_ACC_NAME: ${{ secrets.SHINY_ACC_NAME }}
-          TOKEN: ${{ secrets.TOKEN }}
-          SECRET: ${{ secrets.SECRET }}
-        run: |
-          source("deploy.R")
-        shell: Rscript {0}  
         
       - name: Commit files
         run: |

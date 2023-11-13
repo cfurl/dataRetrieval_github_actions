@@ -16,4 +16,4 @@ setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
                secret = error_on_missing_name("SECRET"))
 
 # Deploy the application.
-deployApp(appFiles = c("ui.R", "server.R", "likes.rds"))
+deployApp(appFiles = c("ui.R", "server.R", "likes.rds"), forceUpdate=TRUE)
